@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 import com.google.common.collect.Lists;
 
+import springfox.documentation.annotations.ApiIgnore;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -54,6 +55,7 @@ public class SwaggerUiConfiguration {
 				.paths(PathSelectors.any())
 				.build()
 				.apiInfo(this.metaData())
+				.ignoredParameterTypes(ApiIgnore.class)
 				.securitySchemes(Lists.newArrayList(apiKey()))
 				.securityContexts(Arrays.asList(securityContext()));
 	}

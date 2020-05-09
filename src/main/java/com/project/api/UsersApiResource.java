@@ -1,4 +1,4 @@
-package com.meteor.project.api;
+package com.project.api;
 
 import java.security.Principal;
 

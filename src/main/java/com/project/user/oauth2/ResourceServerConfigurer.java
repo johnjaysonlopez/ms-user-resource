@@ -1,4 +1,4 @@
-package com.project.oauth2;
+package com.project.user.oauth2;
 
 import java.util.Collection;
 

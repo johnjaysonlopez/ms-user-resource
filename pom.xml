@@ -12,9 +12,9 @@
 	</parent>
 
 	<groupId>com.project</groupId>
-	<artifactId>user-server</artifactId>
+	<artifactId>user-resource</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>User Server</name>
+	<name>User Resource</name>
 	<description>User API Resource</description>
 
 	<properties>

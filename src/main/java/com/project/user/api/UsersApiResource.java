@@ -1,4 +1,4 @@
-package com.project.api;
+package com.project.user.api;
 
 import java.security.Principal;
 

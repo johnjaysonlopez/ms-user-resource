@@ -1,1 +1,1 @@
-# ms-user-server
+# ms-user-resource

@@ -5,7 +5,7 @@ developer:
     email-address: johnjaysonlopez28@gmail.com
 server:
   port: 8001
-  contextPath: /api/v1/user-server
+  contextPath: /api/v1/user-resource
 security:
   oauth2:
     client:

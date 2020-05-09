@@ -1,4 +1,4 @@
-package com.project.configuration;
+package com.project.user.configuration;
 
 import java.util.Arrays;
 import java.util.List;
@@ -51,7 +51,7 @@ public class SwaggerUiConfiguration {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.forCodeGeneration(Boolean.TRUE)
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.project.api"))
+				.apis(RequestHandlerSelectors.basePackage("com.project.user.api"))
 				.paths(PathSelectors.any())
 				.build()
 				.apiInfo(this.metaData())

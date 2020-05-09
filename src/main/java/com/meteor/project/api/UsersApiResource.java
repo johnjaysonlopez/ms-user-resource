@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.AllArgsConstructor;
+import springfox.documentation.annotations.ApiIgnore;
 
 @Api(value = "Users")
 @RestController
@@ -17,8 +18,8 @@ import lombok.AllArgsConstructor;
 public class UsersApiResource {
 
 	@GetMapping
-	@ApiOperation(value = "Retrieve list of users", notes = "Example Requests:\n" + "\n" + "users\n" + "\n" + "\n" + "users?fields=id,username,email,officeName")
-	public String retrieve(Principal principal) {
+	@ApiOperation(value = "Authenticated greeting endpoint", notes = "Returns the login identification name of the user.")
+	public String retrieve(@ApiIgnore Principal principal) {
 		return "Welcome, " + principal.getName() + "!";
 	}
 
